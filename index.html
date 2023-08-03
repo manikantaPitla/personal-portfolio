@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!--FAVICON ICON -->
+    <link rel="Shortcut Icon" href="https://res.cloudinary.com/djkatupvr/image/upload/v1677995538/portfolio-images/M_1_dpu1tw.png">
+    <!---->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/43314e4458.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="portfolio-container" id="portfolioContainer">
+        <section class="home-container p-0" id="homeContainer">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="4000">
+                        <img src="images/bg_scroll_1.jpg" loading="eager" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="images/bg_scroll_2.jpg" loading="eager" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="images/bg_scroll_3.jpg" loading="eager" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+            <div id="particles-js"></div>
+            <!--- particles section  -->
+            <div class="home-content d-flex flex-column  align-items-center ">
+                <h1 class="text-white home-title">MANIKANTA PITLA</h1>
+                <p class="home-greetings mt-3  text-white">Welcome to my Website</p>
+                <p class="home-about text-white">I'm a Web Developer</p>
+            </div>
+            <div class="scroll">
+                <a data-target="#SkillsSection">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+        <nav class="d-flex flex-row align-items-center justify-content-between px-3 px-md-5">
+            <div class="nav-left">
+                <a data-target="#aboutSection">
+                    <h1 class="nav-logo m-0"><span>M</span>ani</h1>
+                </a>
+            </div>
+            <div class="nav-right d-flex align-items-center">
+                <div class="nav-links nav-menu-close" id="navLinks">
+                    <div class="m-0 mt-5  mt-md-0">
+                        <div class="m-0 p-2  links">
+                            <a data-target="portfolioContainer" class="main-link">Home</a>
+                            <a data-target="aboutSection" class="main-link">About</a>
+                            <a data-target="SkillsSection" class="main-link">Skills</a>
+                            <a data-target="projectsSection" class="main-link">Projects</a>
+                            <a data-target="contactSection" class="main-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none close-icon-section d-flex align-items-center justify-content-center" id="closeIcon" onclick="openNavMenu()">
+                        <i class="fa-solid fa-xmark close-icon"></i>
+                    </div>
+                </div>
+                <div class="dark-mode-section ml-4 mr-4 d-block d-md-none">
+                    <i class="fa-solid fa-moon dark-btn" id="darkIicon" onclick="darkMode()"></i>
+                </div>
+                <div class="menu-icon-section d-block d-md-none" onclick="openNavMenu()">
+                    <i class="fa-solid fa-bars-staggered menu-bar-icon"></i>
+                </div>
+            </div>
+            <div class="dark-mode-section ml-4 mr-4 d-none d-md-block">
+                <i class="fa-solid fa-moon dark-btn" id="darkIicon" onclick="darkMode()"></i>
+            </div>
+        </nav>
+        <section class="about-section pt-5 pb-5" id="aboutSection">
+            <div class="container pb-3 pt-3 pt-md-5">
+                <div class="row">
+                    <div class="col-12 d-block d-md-none">
+                        <h1 class="about-title mb-4">About Me</h1>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 d-flex flex-row align-items-center justify-content-center">
+                        <div class="col-12 d-flex flex-row justify-content-center px-5 px-md-0">
+                            <div class="user-pic-bg-section ">
+                                <img class="user-image" src="https://res.cloudinary.com/djkatupvr/image/upload/v1678466105/portfolio-images/mani-bg_kfawwl.png" alt="user-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-8 col-lg-9 p-4 about-details">
+                        <h1 class="about-title d-none d-md-block mb-4">About Me</h1>
+                        <P class="about-description ">I am a web developer, with a vast array of knowledge in many different front end and responsive frameworks, and passionate about technologies, currently learning and developing skills to become a Full Stack Developer. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do.</P>
+                        <div>
+                            <button class="btn button">Resume</button>
+                            <!-- Button trigger modal -->
+                            <button class="btn button" data-toggle="modal" data-target="#staticBackdrop">View Certificates</button>
+                            <!-- Modal  certificates container-->
+                            <div class="modal fade py-5" id="staticBackdrop" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title certificate-title" id="staticBackdropLabel">Certificates</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 p-2"><img class="w-100" src="https://res.cloudinary.com/djkatupvr/image/upload/v1684942318/portfolio-images/certificates/YUUYUCMLJG_page-0001_tgnitb.jpg" alt=""></div>
+                                                <div class="col-12 p-2"><img class="w-100" src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725059/portfolio-images/certificates/Static_Websites_x9snwy.jpg" alt=""></div>
+                                                <div class="col-12 p-2"><img class="w-100" src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725060/portfolio-images/certificates/Responsive_Websites_npv9hz.jpg" alt=""></div>
+                                                <div class="col-12 p-2"><img class="w-100" src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725060/portfolio-images/certificates/Introduction_to_Databases_spgke3.jpg" alt=""></div>
+                                                <div class="col-12 p-2"><img class="w-100" src="https://res.cloudinary.com/djkatupvr/image/upload/v1681727467/portfolio-images/certificates/Dev_Town_Certificate_page-0001_tsounl.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn button btn-sm shadow-lg" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="certificates-container">
+            <div class="container">
+                <marquee scrollamount=6 behavior="alternate">
+                    <div class="marquee-flex d-flex flex-row">
+                        <div class="p-2"><img src="https://res.cloudinary.com/djkatupvr/image/upload/v1684942318/portfolio-images/certificates/YUUYUCMLJG_page-0001_tgnitb.jpg" alt=""></div>
+                        <div class="p-2"><img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725059/portfolio-images/certificates/Static_Websites_x9snwy.jpg" alt=""></div>
+                        <div class="p-2"><img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725060/portfolio-images/certificates/Responsive_Websites_npv9hz.jpg" alt=""></div>
+                        <div class="p-2"><img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681725060/portfolio-images/certificates/Introduction_to_Databases_spgke3.jpg" alt=""></div>
+                        <div class="p-2"><img src="https://res.cloudinary.com/djkatupvr/image/upload/v1681727467/portfolio-images/certificates/Dev_Town_Certificate_page-0001_tsounl.jpg" alt=""></div>
+                    </div>
+                </marquee>
+            </div>
+            </section>
+            <section class="skills-section pt-5 pb-5" id="SkillsSection">
+                <div class="container pt-3 pt-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="skills-title">Skills</h1>
+                        </div>
+                    </div> <!-- Personal skills section -->
+                    <div class="row">
+                        <div class="col-12 pt-4 mb-3">
+                            <h1 class="ps-title">Technical Skills</h1>
+                        </div>
+                        <!-- HTML SKILL CARD -->
+                        <div class="col-12 col-md-6 ">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-html5 mr-2"></i>
+                                        <h1 class="skill-title m-0">HTML5</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">85%</h1>
+                                    </div>
+                                </div>
+                                <div class="html-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CSS SKILL CARD -->
+                        <div class="col-12 col-md-6 ">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-css3-alt mr-2"></i>
+                                        <h1 class="skill-title m-0">CSS3</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">75%</h1>
+                                    </div>
+                                </div>
+                                <div class="css-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BOOTSTRAP SKILL CARD -->
+                        <div class="col-12 col-md-6">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-bootstrap mr-2"></i>
+                                        <h1 class="skill-title m-0">Bootstrap</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">60%</h1>
+                                    </div>
+                                </div>
+                                <div class="bootstrap-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- JAVASCRIPT SKILL CARD -->
+                        <div class="col-12 col-md-6">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-js mr-2"></i>
+                                        <h1 class="skill-title m-0">JavaScript</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">50%</h1>
+                                    </div>
+                                </div>
+                                <div class="js-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SQL SKILL CARD -->
+                        <div class="col-12 col-md-6">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-solid fa-database mr-2"></i>
+                                        <h1 class="skill-title m-0">SQL</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">70%</h1>
+                                    </div>
+                                </div>
+                                <div class="database-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PYTHON SKILL CARD -->
+                        <div class="col-12 col-md-6">
+                            <div class="skill-card  mb-3">
+                                <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-python mr-2"></i>
+                                        <h1 class="skill-title m-0">Python</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="m-0">60%</h1>
+                                    </div>
+                                </div>
+                                <div class="python-skill-progress progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Educational  section -->
+                        <div class="col-12 education-section px-0" id="educationSection">
+                            <div class="col-12 pt-4  mb-3">
+                                <h1 class="ps-title">Education</h1>
+                            </div>
+                            <!-- Degree CARD -->
+                            <div class="col-12  col-md-6">
+                                <div class="skill-card  mb-3">
+                                    <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fa-solid fa-graduation-cap mr-2"></i>
+                                            <h1 class="skill-title m-0">BSc Degree</h1>
+                                        </div>
+                                        <div>
+                                            <h1 class="m-0">74%</h1>
+                                        </div>
+                                    </div>
+                                    <div class="degree-skill-progress progress-bar">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Intermediate CARD -->
+                            <div class="col-12 col-md-6">
+                                <div class="skill-card  mb-3">
+                                    <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fa-solid fa-school mr-2"></i>
+                                            <h1 class="skill-title m-0">Intermediate</h1>
+                                        </div>
+                                        <div>
+                                            <h1 class="m-0">82%</h1>
+                                        </div>
+                                    </div>
+                                    <div class="inter-skill-progress progress-bar">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SSC CARD -->
+                            <div class="col-12 col-md-6">
+                                <div class="skill-card  mb-3">
+                                    <div class="p-2 px-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <i class="fa-solid fa-book-open-reader mr-2"></i>
+                                            <h1 class="skill-title m-0">SSC</h1>
+                                        </div>
+                                        <div>
+                                            <h1 class="m-0">90%</h1>
+                                        </div>
+                                    </div>
+                                    <div class="ssc-skill-progress progress-bar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center col-12 mt-3">
+                    <span class="m-0 mr-1" id="showText">SHOW EDUCATION</span>
+                    <i class="fa-solid fa-chevron-down" id="showIcon"></i>
+                </div>
+            </section>
+            <section class="projects-section pt-5" id="projectsSection">
+                <div class="container pt-3 pt-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="skills-title mb-5">Projects</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="project-flex-sec">
+
+                                <div class="project-card p-card-1  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">Tourism Website</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://manikantapitla.github.io/visit-hyderabad-tourism-website/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card p-card-2  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">Python Patterns</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://manikantapitla.github.io/python-patterns/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card p-card-3  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">Calculator</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://calc818.ccbp.tech/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card p-card-4  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">Elon Musk Tribute Page</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://tributetoelon.ccbp.tech/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card p-card-5  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">TO-DO List</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://todo818.ccbp.tech/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card p-card-6  m-2">
+                                    <div class="card-content  d-flex flex-column align-items-center justify-content-center text-center ">
+                                        <h1 class="project-title">Weather Application</h1>
+
+                                        <div class="view-website-button mt-1">
+                                            <a href="https://manikantapitla.github.io/Weather-application/" target="_blank "> <button class="btn button">View Website <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section pt-5 pb-5" id="contactSection">
+                <div class="container pt-3 pt-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="contact-title">Contact Me</h1>
+                        </div>
+                        <div class="col-12 col-md-6 p-4">
+                            <div class=" p-0">
+                                <p class="connect-title"> Let's Connect !</p>
+                                <div class="d-flex flex-row mt-4 mb-4">
+                                    <a href="https://www.instagram.com/mani_dynamic_/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="icon-bg" title="Instagram"><i class="fa-brands fa-instagram s-icon"></i></a>
+                                    <a href="https://twitter.com/mani_dynamic_?t=HkGVG_QKHnjISimKUZbBbg&s=09x" target="_blank" class="icon-bg" title="Twitter"><i class="fa-brands fa-twitter s-icon"></i></a>
+                                    <a href="https://www.linkedin.com/in/manikanta8/" target="_blank" class="icon-bg" title="LinkedIn"><i class="fa-brands fa-linkedin s-icon"></i></a>
+                                    <a href="https://github.com/manikantaPitla" target="_blank" class="icon-bg" title="Github"><i class="fa-brands fa-square-github s-icon"></i></a>
+                                </div>
+                            </div>
+                            <div class=" p-0">
+                                <div class="d-flex flex-row align-items-center mb-4 ">
+                                    <i class="fa-solid fa-envelope mr-2 contact-icon"></i>
+                                    <p class="contact-text m-0">pitlamanikanta81@gmail.com</p>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-4 ">
+                                    <i class="fa-solid fa-phone mr-2 contact-icon"></i>
+                                    <p class="contact-text m-0">+91 8185******</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-5">
+                            <form name="submit-to-google-sheet">
+                                <div class="row">
+                                    <div class=" col-6 mb-3  p-0 pr-1 input-section">
+                                        <input type="text" name="Name" class="input-box w-100 " id="yourName" required>
+                                        <Label for="yourName" class="label-input">Your Name</Label>
+                                    </div>
+                                    <div class="col-6 mb-3 p-0  input-section">
+                                        <input type="text" name="Email" class="input-box w-100 " id="emailID" required>
+                                        <Label for="emailID" class="label-input">Email ID</Label>
+                                    </div>
+                                    <div class="col-12 p-0 m-0 mb-3 input-section">
+                                        <input type="text" name="Subject" class="input-box  w-100" id="yourSubject" required>
+                                        <Label for="yourSubject" class="label-input">Subject</Label>
+                                    </div>
+                                    <div class="col-12 p-0 m-0  mb-3 input-section">
+                                        <input type="text" name="Message" class="input-box w-100" id="YourMessage" required>
+                                        <Label for="YourMessage" class="label-input">Your Message</Label>
+                                    </div>
+
+                                    <div class="btn-section p-0">
+                                        <button class="btn  button" type="reset">Reset</button>
+                                        <button class="btn  button" type="submit">Connect</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 text-center">
+                            <hr class="hr-line" />
+                            <div class="">
+                                <img class="footer-logo mb-2" src="https://res.cloudinary.com/djkatupvr/image/upload/v1678191889/portfolio-images/logo-png_d9wlag.png" alt="">
+                                <p class="footer-text"><span class="copyright-logo ">&#169; </span><span>Mani</span> | Created with HTML, CSS, Bootstrap and Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--SCRIPT FILE-->
+        <script src="script.js"></script>
+        <script src="particles.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+        <script src="app.js"></script>
+
+</body>
+
+</html>
